@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Add";
+}
+<html>
+<head>
+    <title>Add</title>
+    
+</head>
+<body>
+    <h2 >Add a Work TO DO</h2>
+    <div style="width:500px; padding-top:50px; padding-left:100px">
+        <form name="Add" action="AddTODO" method="post">
+            <h3>Enter Details</h3>
+            <p>
+                Work TO DO:
+                <input type="text" name="todo" required>
+                <br>
+
+            <p>
+                Due Date:
+                <input type="text" name="ddate" required>
+                <br>
+                <h5>Set Priority</h5>
+                <input type="radio" name="priority" value="High" required> High
+                <input type="radio" name="priority" value="Medium"> Medium
+                <input type="radio" name="priority" value="Low"> Low
+
+
+
+                <br><br>
+                <input type="submit" value="Add">
+
+
+
+
+        </form>
+
+    </div>
+</body>
+</html>

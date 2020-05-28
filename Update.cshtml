@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Update";
+}
+<html>
+<head>
+    <title>Update</title>
+</head>
+<body>
+    <h2>Update a Work TO DO</h2>
+    <div style="width:500px; padding-top:50px; padding-left:100px">
+        <form name="Add" action="UpdateTODO" method="post">
+            <h3>Enter Details</h3>
+            <p>
+                Id of TO DO to update:
+                <input type="text" name="id" required>
+                <br>
+            <p>
+                Update Work TO DO:
+                <input type="text" name="todo" required>
+                <br>
+
+            <p>
+                Update Due Date:
+                <input type="text" name="ddate" required>
+                <br>
+                <h5>Update Priority</h5>
+                <input type="radio" name="priority" value="High" required> High
+                <input type="radio" name="priority" value="Medium"> Medium
+                <input type="radio" name="priority" value="Low"> Low
+
+
+
+                <br><br>
+                <input type="submit" value="Update">
+
+
+
+
+        </form>
+
+    </div>
+</body>
+</html>

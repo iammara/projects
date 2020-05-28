@@ -1,0 +1,27 @@
+﻿@model List<ToDoList.Models.List>
+@{
+    ViewBag.Title = "Home Page";
+}
+    <html>
+    <head>
+        <title>Show</title>
+    </head>
+    <body>
+        <div style="width:500px; padding-top:50px; padding-left:100px">
+            <h2>Filter TO DOs by Priority</h2><br />
+
+            <form method="post" action="High">
+                <input type="submit" value="High"><br><br>
+            </form>
+            <form method="post" action="Medium">
+                <input type="submit" value="Medium"><br><br>
+            </form>
+            <form method="post" action="Low">
+                <input type="submit" value="Low"><br><br>
+            </form>
+
+
+        </div>
+</body>
+</html>
+

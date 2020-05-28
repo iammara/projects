@@ -1,0 +1,36 @@
+﻿@model List<ToDoList.Models.List>
+@{
+    ViewBag.Title = "Show";
+}
+<html>
+<head>
+    <title>Show</title>
+</head>
+<body>
+    <div style="width:500px; padding-top:50px; padding-left:100px">
+        @if (Model.Count <= 0)
+        {
+            <h2>No Work to Do</h2>
+        }
+        else
+        {
+            <h2>TO DOs</h2>
+            foreach (var m in Model)
+            {
+                <h3>Id: @m.Id</h3>
+                <p>
+                    @m.ToDo
+                </p>
+
+                <p>
+                    Due:
+                    @m.DueDate
+                </p>
+                <p> Priority: @m.Priority</p>
+
+            }
+        }
+    </div>
+</body>
+</html>
+
